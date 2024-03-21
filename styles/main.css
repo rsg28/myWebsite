@@ -217,7 +217,7 @@
   border-radius: var(--border-radius-1);
 }
 .description_card_proyect {
-  text-align: right;
+  text-align: left;
 }
 .text_proyect_import {
   color: var(--color-1);
@@ -227,15 +227,24 @@
   text-transform: uppercase;
   margin-top: 5px;
   margin-bottom: 10px;
-
-  color: var(--text-color-2);
+  color: var(--color-1);
+  font-size: 0.8cm;
+  font-weight: bold;
+  background-color: #270732 ;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 0px;
+  text-align: center;
 }
 .information_card_proyect {
   background-color: var(--color-1);
   padding: 10px;
-  border-radius: var(--border-radius-1);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   margin-bottom: 10px;
-
+  color: white;
+  text-align: justify;
   transition: 0.3s ease-in-out;
   font-size: 0.95rem;
 }
@@ -281,6 +290,7 @@
 }
 .description_card_proyect {
   position: relative;
+  z-index: 2; /* Higher z-index value to bring in front of the image */
 }
 /* 
     odd: impar;
